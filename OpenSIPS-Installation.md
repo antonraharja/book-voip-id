@@ -74,3 +74,16 @@ Edit `/etc/init.d/opensips.init` and change these parts:
 - search for `/etc/opensips/opensips.cfg` and then change it to `/usr/local/etc/opensips/opensips.cfg`
 
 Edit `/etc/default/opensips` and change *RUN_OPENSIPS=no* to *RUN_OPENSIPS=yes*.
+
+Starts OpenSIPS:
+
+```
+/etc/init.d/opensips.init start
+```
+
+Verify that OpenSIPS is running:
+
+```
+ps ax | grep opensips
+netstat -lnptu | grep opensips
+```
