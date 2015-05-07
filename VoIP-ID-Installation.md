@@ -92,12 +92,13 @@ Get source codes from git repository:
 mkdir -p /opt/git
 cd /opt/git
 git clone https://github.com/antonraharja/voip-id.git
+cd /opt/git/voip-id
 ```
 
 Edit database access:
 
 ```
-vi voip-id/app/config/database.php
+vi app/config/database.php
 ```
 
 Change MySQL username and password on below section:
@@ -141,9 +142,17 @@ mv /var/www/html /var/www/html.dist
 ln -s /opt/git/voip-id/public /var/www/html
 ```
 
-### Step 11: Almost done, init VoIP ID
+### Step 11: Init VoIP ID from browser
 
-Visit `http://this_server_IP/init` once.
+From browser visit `http://this_server_IP/init` once.
+
+Edit `routes.php` to comment init route at line 8:
+
+```
+vi app/routes.php
+```
+
+### Step 12: Login from browser for the first time
 
 Visit `http://this_server_IP` and login using below access to enter admin menus:
 
