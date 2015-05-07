@@ -1,5 +1,9 @@
 # VoIP ID Installation
 
+## About
+
+This document explains how to install VoIP ID software.
+
 Info   | Value
 ------ | -----
 Update | 1505071750
@@ -71,7 +75,7 @@ mysqladmin -uroot -p create voip_id
 mysqladmin -uroot -p create opensips
 ```
 
-## Step 8: Get the software and setup
+### Step 8: Get the software and setup
 
 Get source codes from git repository:
 
