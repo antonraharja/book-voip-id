@@ -79,12 +79,12 @@ Get source codes from git repository:
 mkdir -p /opt/git
 cd /opt/git
 git clone https://github.com/antonraharja/voip-id.git
+```
 
 Edit database access:
 
 ```
-cd voip-id/app/config
-vi database.php
+vi voip-id/app/config/database.php
 ```
 
 Change MySQL username and password on below section:
@@ -116,7 +116,6 @@ Change MySQL username and password on below section:
 Update composer files and initiate Laravel:
 
 ```
-cd ../../
 ./composer.phar self-update
 ./composer.phar update
 php artisan migrate
