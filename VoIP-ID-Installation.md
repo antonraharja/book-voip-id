@@ -132,7 +132,7 @@ mv /var/www/html /var/www/html.dist
 ln -s /opt/git/voip-id/public /var/www/html
 ```
 
-### Almost done, init VoIP ID
+### Step 10: Almost done, init VoIP ID
 
 Visit `http://this_server_IP/init` once.
 
