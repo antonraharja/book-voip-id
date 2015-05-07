@@ -4,10 +4,10 @@
 
 Info   | Value
 ------ | -----
-Update | 1505071330
+Update | 1505072330
 Author | [Anton Raharja](http://antonraharja.com)
 
-This document explains how to install OpenSIPS, part #2 of full installation.
+This document explains how to install OpenSIPS and configure it for VoIP ID.
 
 ### Step 1: Get OpenSIPS and prepare it
 
@@ -51,3 +51,26 @@ We also need to make sure that all default and required extra modules are copied
 ```
 ls -l /usr/local/lib/opensips/modules/
 ```
+
+### Step 4: Init script
+
+Setup init script for OpenSIPS:
+
+```
+cd /opt/src/opensips/opensips-1.9.1-tls
+cp packaging/debian/opensips.init /etc/init.d/
+chmod +x /etc/init.d/opensips.init
+cp packaging/debian/opensips.default /etc/default/opensips
+chmod -x /etc/default/opensips
+update-rc.d opensips.init defaults 99
+groupadd opensips
+useradd -M -s /usr/sbin/nologin -g opensips opensips
+```
+
+Edit `/etc/init.d/opensips.init` and change these parts:
+
+- search for *PATH* and add `/usr/local/sbin` to *PATH*. Eg: `PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin`
+- search for *DAEMON* and change `DAEMON=/usr/sbin/opensips` to `DAEMON=/usr/local/sbin/opensips`
+- search for `/etc/opensips/opensips.cfg` and then change it to `/usr/local/etc/opensips/opensips.cfg`
+
+Edit `/etc/default/opensips` and change *RUN_OPENSIPS=no* to *RUN_OPENSIPS=yes*.
