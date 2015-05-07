@@ -32,6 +32,7 @@ Execute below commands correctly and in order to compile and install opensips:
 TLS=1 make
 TLS=1 make include_modules="db_mysql" modules
 TLS=1 make include_modules="db_mysql" install
+```
 
 ### Step 3: Verify installation
 
