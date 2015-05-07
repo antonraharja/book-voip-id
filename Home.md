@@ -1,6 +1,6 @@
 Welcome to the VoIP ID wiki.
 
-# Installation
+Table of Contents
 
-[VoIP ID Installation](installation/voip-id.md)
-
+* [[Installation|installation/Home]]
+	* [[VoIP ID Installation|installation/VoIP-ID]]
