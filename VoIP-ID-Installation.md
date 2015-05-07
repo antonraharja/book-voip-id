@@ -76,7 +76,37 @@ mysqladmin -uroot -p create opensips
 mkdir -p /opt/git
 cd /opt/git
 git clone https://github.com/antonraharja/voip-id.git
-cd voip-id
+cd voip-id/app/config
+vi database.php
+```
+Change root mysql password on section : 
+```
+'mysql' => array(
+        'driver'    => 'mysql',
+        'host'      => 'localhost',
+        'database'  => 'voip_id',
+        'username'  => 'root',
+        'password'  => 'password',
+        'charset'   => 'utf8',
+        'collation' => 'utf8_unicode_ci',
+        'prefix'    => '',
+),
+
+'mysql2' => array(
+         'driver'    => 'mysql',
+         'host'      => 'localhost',
+         'database'  => 'opensips',
+         'username'  => 'root',
+         'password'  => 'password',
+         'charset'   => 'utf8',
+         'collation' => 'utf8_unicode_ci',
+         'prefix'    => '',
+),
+
+```
+
+```
+cd ../../
 ./composer.phar self-update
 ./composer.phar update
 php artisan migrate
