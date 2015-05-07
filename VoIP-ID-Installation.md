@@ -39,14 +39,23 @@ php5enmod mcrypt
 service apache2 restart
 ```
 
-### Step 5: Enable mod_rewrite
+### Step 5: Install composer
+
+```
+cd
+php -r "readfile('https://getcomposer.org/installer');" | php
+mv composer.phar /usr/local/bin/composer
+chmod +x /usr/local/bin/composer
+```
+
+### Step 6: Enable mod_rewrite
 
 ```
 a2enmod rewrite
 service apache2 restart
 ```
 
-### Step 6: Update Apache2 options
+### Step 7: Update Apache2 options
 
 For rewrite modules to work properly in this manual you need to change `AllowOverride` option from `None` to `All`.
 
@@ -68,14 +77,14 @@ Restart apache2, again:
 service apache2 restart
 ```
 
-### Step 7: Add essential databases
+### Step 8: Add essential MySQL databases
 
 ```
 mysqladmin -uroot -p create voip_id
 mysqladmin -uroot -p create opensips
 ```
 
-### Step 8: Get the software and setup
+### Step 9: Get the software and setup
 
 Get source codes from git repository:
 
@@ -120,19 +129,19 @@ Change MySQL username and password on below section:
 Update composer files and initiate Laravel:
 
 ```
-./composer.phar self-update
-./composer.phar update
+composer self-update
+composer update
 php artisan migrate
 ```
 
-### Step 9: Install VoIP ID on Apache2
+### Step 10: Install VoIP ID on Apache2
 
 ```
 mv /var/www/html /var/www/html.dist
 ln -s /opt/git/voip-id/public /var/www/html
 ```
 
-### Step 10: Almost done, init VoIP ID
+### Step 11: Almost done, init VoIP ID
 
 Visit `http://this_server_IP/init` once.
 
