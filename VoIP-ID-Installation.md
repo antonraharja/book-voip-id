@@ -5,7 +5,7 @@ Info   | Value
 Update | 1505071200
 Author | [Anton Raharja](http://antonraharja.com)
 
-### Install Ubuntu 14.04 server
+### Step 1: Install Ubuntu 14.04 server
 
 During installation you need to select these packages:
 
@@ -13,20 +13,20 @@ During installation you need to select these packages:
 - LAMP
 - Mail server
 
-### Update Ubuntu 14.04 server
+### Step 2: Update Ubuntu 14.04 server
 
 ```
 apt-get update
 apt-get upgrade
 ```
 
-### Install git
+### Step 3: Install git
 
 ```
 apt-get install git
 ```
 
-### Install PHP5 Mcrypt and enable it
+### Step 4: Install PHP5 Mcrypt and enable it
 
 ```
 apt-get install php5-mcrypt
@@ -34,14 +34,14 @@ php5enmod mcrypt
 service apache2 restart
 ```
 
-### Enable mod_rewrite
+### Step 5: Enable mod_rewrite
 
 ```
 a2enmod rewrite
 service apache2 restart
 ```
 
-### Update Apache2 options
+### Step 6: Update Apache2 options
 
 For rewrite modules to work properly in this manual you need to change `AllowOverride` option from `None` to `All`.
 
@@ -63,14 +63,14 @@ Restart apache2, again:
 service apache2 restart
 ```
 
-### Add essential databases
+### Step 7: Add essential databases
 
 ```
 mysqladmin -uroot -p create voip_id
 mysqladmin -uroot -p create opensips
 ```
 
-## Get the software and setup
+## Step 8: Get the software and setup
 
 ```
 mkdir -p /opt/git
@@ -82,7 +82,7 @@ cd voip-id
 php artisan migrate
 ```
 
-### Install VoIP ID on Apache2
+### Step 9: Install VoIP ID on Apache2
 
 ```
 mv /var/www/html /var/www/html.dist
