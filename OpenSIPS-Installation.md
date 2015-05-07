@@ -1,9 +1,13 @@
 # OpenSIPS Installation
 
+## About
+
 Info   | Value
 ------ | -----
 Update | 1505071330
 Author | [Anton Raharja](http://antonraharja.com)
+
+This document explains how to install OpenSIPS, part #2 of full installation.
 
 ### Step 1: Get OpenSIPS and prepare it
 
