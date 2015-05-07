@@ -10,7 +10,7 @@ Author | [Asoka Wardhana](http://asokawardhana.web.id/)
 
 This document explains how to install VoIP ID software, part #1 of full installation.
 
-### Step 1: Install Ubuntu 14.04 server
+### Step 1: Install Ubuntu server 14.04 or 15.04
 
 During installation you need to select these packages:
 
@@ -18,7 +18,7 @@ During installation you need to select these packages:
 - LAMP
 - Mail server
 
-### Step 2: Update Ubuntu 14.04 server
+### Step 2: Update Ubuntu server 14.04 or 15.04
 
 ```
 apt-get update
@@ -130,7 +130,6 @@ Change MySQL username and password on below section:
 Update composer files and initiate Laravel:
 
 ```
-composer self-update
 composer update
 php artisan migrate
 ```
@@ -140,16 +139,17 @@ php artisan migrate
 ```
 mv /var/www/html /var/www/html.dist
 ln -s /opt/git/voip-id/public /var/www/html
+chown www-data.www-data -R /opt/git/voip-id/
 ```
 
 ### Step 11: Init VoIP ID from browser
 
 From browser visit `http://this_server_IP/init` once.
 
-Edit `routes.php` to comment init route at line 8:
+Edit `app/routes.php` to comment init route at line 8:
 
 ```
-vi app/routes.php
+vi /opt/git/voip-id/app/routes.php
 ```
 
 ### Step 12: Login from browser for the first time
