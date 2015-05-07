@@ -40,7 +40,9 @@ a2enmod rewrite
 service apache2 restart
 ```
 
-### Update `AllowOverride` option from `None` to `All`
+### Update Apache2 options
+
+For rewrite modules to work properly in this manual you need to change `AllowOverride` option from `None` to `All`.
 
 We will update the default vhost. A better way would be to create a new vhost and configure it properly.
 
