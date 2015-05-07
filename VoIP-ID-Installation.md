@@ -47,7 +47,7 @@ For rewrite modules to work properly in this manual you need to change `AllowOve
 
 We will update the default vhost. A better way would be to create a new vhost and configure it properly.
 
-Add below option block to `/etc/apache2/sites-available/000-default.conf`:
+Add below option block to `/etc/apache2/sites-available/000-default.conf` (just under `DocumentRoot` option would be fine):
 
 ```
 <Directory /var/www/html>
