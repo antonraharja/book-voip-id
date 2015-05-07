@@ -2,8 +2,9 @@
 
 Info   | Value
 ------ | -----
-Update | 1505071200
+Update | 1505071750
 Author | [Anton Raharja](http://antonraharja.com)
+Author | [Asoka Wardhana](http://asokawardhana.web.id/)
 
 ### Step 1: Install Ubuntu 14.04 server
 
@@ -72,14 +73,22 @@ mysqladmin -uroot -p create opensips
 
 ## Step 8: Get the software and setup
 
+Get source codes from git repository:
+
 ```
 mkdir -p /opt/git
 cd /opt/git
 git clone https://github.com/antonraharja/voip-id.git
+
+Edit database access:
+
+```
 cd voip-id/app/config
 vi database.php
 ```
-Change root mysql password on section : 
+
+Change MySQL username and password on below section:
+
 ```
 'mysql' => array(
         'driver'    => 'mysql',
@@ -102,8 +111,9 @@ Change root mysql password on section :
          'collation' => 'utf8_unicode_ci',
          'prefix'    => '',
 ),
-
 ```
+
+Update composer files and initiate Laravel:
 
 ```
 cd ../../
