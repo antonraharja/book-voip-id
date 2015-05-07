@@ -26,7 +26,7 @@ apt-get install build-essential flex bison zlib1g-dev libncurses5-dev libssl-dev
 
 ### Step 3: Compile and install OpenSIPS
 
-Execute below commands correctly and in order to compile and install opensips:
+Execute below commands correctly and in order to compile and install OpenSIPS:
 
 ```
 TLS=1 make
@@ -36,7 +36,7 @@ TLS=1 make include_modules="db_mysql" install
 
 ### Step 3: Verify installation
 
-Verify that opensips binaries are exists in /usr/local/sbin, we should see `opensips*` and `osip*` binary files:
+Verify that OpenSIPS binaries are exists in /usr/local/sbin, we should see `opensips*` and `osip*` binary files:
 
 ```
 ls -l /usr/local/sbin/
