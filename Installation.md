@@ -9,3 +9,4 @@ Available manuals
 -----------------
 
 * [[VoIP ID Installation]]
+* [[OpenSIPS Installation]]
