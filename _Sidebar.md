@@ -1,5 +1,3 @@
-Welcome to the VoIP ID wiki.
-
 Table of Contents
 
 * [[Installation]]
