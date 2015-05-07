@@ -34,22 +34,28 @@ Execute below commands correctly and in order to compile and install OpenSIPS:
 
 ```
 TLS=1 make
-TLS=1 make include_modules="db_mysql" modules
-TLS=1 make include_modules="db_mysql" install
+TLS=1 make include_modules="db_mysql auth_db" modules
+TLS=1 make include_modules="db_mysql auth_db" install
 ```
 
 ### Step 3: Verify installation
 
-Verify that OpenSIPS binaries are exists in /usr/local/sbin, we should see `opensips*` and `osip*` binary files:
+Verify that OpenSIPS binaries are exists in `/usr/local/sbin`, look for `opensips*` and `osip*` binary files:
 
 ```
 ls -l /usr/local/sbin/
 ```
 
-We also need to make sure that all default and required extra modules are copied to OpenSIPS module directory:
+Make sure that all default and required extra modules are copied to OpenSIPS module directory:
 
 ```
 ls -l /usr/local/lib/opensips/modules/
+```
+
+And also make sure that default configuration files exists, look for `opensips.cfg`:
+
+```
+ls -l /usr/local/etc/opensips
 ```
 
 ### Step 4: Init script
@@ -87,3 +93,5 @@ Verify that OpenSIPS is running:
 ps ax | grep opensips
 netstat -lnptu | grep opensips
 ```
+
+### Step 5: 
