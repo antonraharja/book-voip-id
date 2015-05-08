@@ -6,7 +6,7 @@ Info   | Value
 ------ | -----
 Update | 1505071750
 Author | [Anton Raharja](http://antonraharja.com)
-Author | [Asoka Wardhana](http://asokawardhana.web.id/)
+Tester | [Asoka Wardhana](http://asokawardhana.web.id/)
 
 This document explains how to install VoIP ID software, part #1 of full installation.
 
