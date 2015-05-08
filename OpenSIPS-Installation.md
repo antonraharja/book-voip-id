@@ -7,7 +7,7 @@ Info   | Value
 Update | 1505072330
 Author | [Anton Raharja](http://antonraharja.com)
 
-This document explains how to install OpenSIPS and configure it for VoIP ID.
+This document explains how to install OpenSIPS and configure it for VoIP ID. This manual contains special steps required to get OpenSIPS to work with VoIP ID, that means it is not meant for standalone or general purpose OpenSIPS installation.
 
 ### Step 1: Get OpenSIPS and prepare it
 
@@ -158,4 +158,41 @@ Verify that OpenSIPS is running:
 ```
 ps ax | grep opensips
 netstat -lnptu | grep opensips
+```
+
+### Step 8: Setup cron scripts
+
+This step explains how to install cron scripts that integrate OpenSIPS and VoIP ID.
+
+```
+cd /opt/git/voip-id
+cp -rR contrib/cron-scripts-for-opensips/voip-id/ /usr/local/sbin
+```
+
+Configure cron scripts, change DB access options:
+
+```
+cd /usr/local/sbin/voip-id/
+vi config.php
+```
+
+Verify cron scripts installation, those scripts must not popup anything or any errors:
+
+```
+cd /usr/local/sbin/voip-id/
+./run-service-sync.sh 
+./run-service-cleaner.sh 
+```
+
+Setup cron, the sync script runs every minute, the cleaner script runs once a day every 1 AM:
+
+```
+crontab -e
+```
+
+In `crontab -e` put these at the end of file, you need to also make sure that you press ENTER at the end of the line:
+
+```
+* * * * * /usr/local/sbin/voip-id/run-service-sync.sh >/dev/null 2>&1
+0 1 * * * /usr/local/sbin/voip-id/run-service-cleaner.sh >/dev/null 2>&1
 ```
