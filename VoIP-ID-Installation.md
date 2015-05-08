@@ -8,7 +8,7 @@ Update | 1505071750
 Author | [Anton Raharja](http://antonraharja.com)
 Tester | [Asoka Wardhana](http://asokawardhana.web.id/)
 
-This document explains how to install VoIP ID software, part #1 of full installation.
+This document explains how to install VoIP ID software, the web User Interface part.
 
 ### Step 1: Install Ubuntu server 14.04 or 15.04
 
