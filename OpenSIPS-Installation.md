@@ -4,7 +4,7 @@
 
 Info   | Value
 ------ | -----
-Update | 1505081000
+Update | 1505081040
 Author | [Anton Raharja](http://antonraharja.com)
 Tester | [Asoka Wardhana](http://asokawardhana.web.id/)
 
@@ -168,6 +168,7 @@ This step explains how to install cron scripts that integrate OpenSIPS and VoIP 
 ```
 cd /opt/git/voip-id
 cp -rR contrib/cron-scripts-for-opensips/voip-id/ /usr/local/sbin
+mkdir -p /var/log/opensips
 ```
 
 Configure cron scripts, change DB access options:
