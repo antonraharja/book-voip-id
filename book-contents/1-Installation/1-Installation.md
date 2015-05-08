@@ -8,5 +8,5 @@ You need to do both.
 Available manuals
 -----------------
 
-* [[VoIP ID Installation]]
-* [[OpenSIPS Installation]]
+* [1.1 VoIP ID Installation](1.1-VoIP-ID-Installation.md)
+* [1.2 OpenSIPS Installation](1.2-OpenSIPS-Installation.md)
