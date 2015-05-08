@@ -95,7 +95,32 @@ ps ax | grep opensips
 netstat -lnptu | grep opensips
 ```
 
-### Step 5: Use supplied config file from VoIP ID
+### Step 5: Init DB tables for OpenSIPS
+
+Edit `opensipsctlrc` to get `opensipsdbctl` to work, we will use this binary to init DB tables for OpenSIPS:
+
+```
+vi /usr/local/etc/opensips/opensipsctlrc
+```
+
+In `opensipsctlrc` you need to make adjustments to match your MySQL setup. In this manual here are options you need to change (make sure that you have removed the comment mark):
+
+```
+DBENGINE=MYSQL
+DBHOST=localhost
+DBNAME=opensips
+DBRWUSER=root
+DBRWPW="password"
+DBROOTUSER="root"
+```
+
+Init DB tables for OpenSIPS, answer `y` to all install tables questions:
+
+```
+opensipsdbctl reinit
+```
+
+### Step 6: Use supplied config file from VoIP ID
 
 ```
 cd /opt/git/voip-id
