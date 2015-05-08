@@ -6,6 +6,7 @@ Info   | Value
 ------ | -----
 Update | 1505081000
 Author | [Anton Raharja](http://antonraharja.com)
+Tester | [Asoka Wardhana](http://asokawardhana.web.id/)
 
 This document explains how to install OpenSIPS and configure it for VoIP ID. This manual contains special steps required to get OpenSIPS to work with VoIP ID, that means it is not meant for standalone or general purpose OpenSIPS installation.
 
