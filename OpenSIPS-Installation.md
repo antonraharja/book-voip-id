@@ -93,3 +93,24 @@ Verify that OpenSIPS is running:
 ps ax | grep opensips
 netstat -lnptu | grep opensips
 ```
+
+### Step 5: Use supplied config file from VoIP ID
+
+```
+cd /opt/git/voip-id
+ls -l contrib/opensips-cfg/opensips.cfg
+cp /usr/local/etc/opensips/opensips.cfg /usr/local/etc/opensips/opensips.cfg.dist
+cp contrib/opensips-cfg/opensips.cfg /usr/local/etc/opensips/
+```
+
+Edit new `/usr/local/etc/opensips/opensips.cfg` and make these changes:
+
+- Edit the file and look for IP addresses, usually they are marked with comment *CUSTOMIZE ME* beside them. Change IP `192.168.1.150` to your OpenSIPS server IP address.
+- Edit the file and look for MySQL username and password, usually they are also marked with comment *CUSTOMIZE ME* beside them. Change `root:password` to your MySQL server access to OpenSIPS database.
+
+Restart OpenSIPS:
+
+```
+/etc/init.d/opensips.init stop
+/etc/init.d/opensips.init start
+```
