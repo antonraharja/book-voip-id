@@ -93,5 +93,3 @@ Verify that OpenSIPS is running:
 ps ax | grep opensips
 netstat -lnptu | grep opensips
 ```
-
-### Step 5: 
