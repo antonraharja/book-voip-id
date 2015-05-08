@@ -190,7 +190,7 @@ Setup cron, the sync script runs every minute, the cleaner script runs once a da
 crontab -e
 ```
 
-In `crontab -e` put these at the end of file, you need to also make sure that you press ENTER at the end of the line:
+In `crontab -e` put these at the end of file, you need to also make sure that you press `ENTER` at the end of the line:
 
 ```
 * * * * * /usr/local/sbin/voip-id/run-service-sync.sh >/dev/null 2>&1
