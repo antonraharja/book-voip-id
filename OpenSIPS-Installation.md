@@ -111,7 +111,6 @@ Edit new `/usr/local/etc/opensips/opensips.cfg` and make these changes:
 Verify configuration:
 
 ```
-/etc/init.d/opensips.init stop
 opensips -c
 ```
 Restart OpenSIPS:
