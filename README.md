@@ -1,3 +1,3 @@
 Book project for VoIP ID
 
-Book contents are available [here](book-contents/Home.md).
+Book contents are available [here](book-contents).
