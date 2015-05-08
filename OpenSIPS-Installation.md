@@ -25,7 +25,7 @@ ls -l
 ### Step 2: Install development packages
 
 ```
-apt-get install build-essential flex bison zlib1g-dev libncurses5-dev libssl-dev libfrontier-rpc-perl libmysqlclient-dev pkg-config
+apt-get install build-essential flex bison pkg-config zlib1g-dev libncurses5-dev libssl-dev libfrontier-rpc-perl libmysqlclient-dev libxml2-dev libpcre3-dev
 ```
 
 ### Step 3: Compile and install OpenSIPS
@@ -34,8 +34,8 @@ Execute below commands correctly and in order to compile and install OpenSIPS:
 
 ```
 TLS=1 make
-TLS=1 make include_modules="db_mysql auth_db" modules
-TLS=1 make include_modules="db_mysql auth_db" install
+TLS=1 make include_modules="db_mysql auth_db dialplan presence" modules
+TLS=1 make include_modules="db_mysql auth_db dialplan presence" install
 ```
 
 ### Step 3: Verify installation
@@ -108,9 +108,14 @@ Edit new `/usr/local/etc/opensips/opensips.cfg` and make these changes:
 - Edit the file and look for IP addresses, usually they are marked with comment *CUSTOMIZE ME* beside them. Change IP `192.168.1.150` to your OpenSIPS server IP address.
 - Edit the file and look for MySQL username and password, usually they are also marked with comment *CUSTOMIZE ME* beside them. Change `root:password` to your MySQL server access to OpenSIPS database.
 
-Restart OpenSIPS:
+Verify configuration:
 
 ```
 /etc/init.d/opensips.init stop
-/etc/init.d/opensips.init start
+opensips -c
+```
+Restart OpenSIPS:
+
+```
+/etc/init.d/opensips.init restart
 ```
