@@ -120,7 +120,15 @@ Init DB tables for OpenSIPS, answer `y` to all install tables questions:
 opensipsdbctl reinit
 ```
 
-### Step 6: Use supplied config file from VoIP ID
+### Step 6: Init CDR for OpenSIPS
+
+```
+cd /opt/git/voip-id
+mysql -uroot -p opensips < contrib/opensips-cdrs/cdrs.mysql.sql
+mysql -uroot -p opensips < contrib/opensips-cdrs/opensips_cdrs.mysql.sql
+```
+
+### Step 7: Use supplied config file from VoIP ID
 
 ```
 cd /opt/git/voip-id
@@ -143,4 +151,11 @@ Restart OpenSIPS:
 
 ```
 /etc/init.d/opensips.init restart
+```
+
+Verify that OpenSIPS is running:
+
+```
+ps ax | grep opensips
+netstat -lnptu | grep opensips
 ```
