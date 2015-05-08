@@ -60,7 +60,7 @@ ls -l /usr/local/etc/opensips
 
 ### Step 4: Init script
 
-Setup init script for OpenSIPS:
+Setup init script for OpenSIPS, run below commands correctly and in order:
 
 ```
 cd /opt/src/opensips/opensips-1.9.1-tls
@@ -69,6 +69,7 @@ chmod +x /etc/init.d/opensips.init
 cp packaging/debian/opensips.default /etc/default/opensips
 chmod -x /etc/default/opensips
 update-rc.d opensips.init defaults 99
+mkdir -p /var/run/opensips
 groupadd opensips
 useradd -M -s /usr/sbin/nologin -g opensips opensips
 ```
