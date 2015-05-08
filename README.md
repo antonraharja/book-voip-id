@@ -8,6 +8,10 @@ VoIP ID is a Free and Open Source Software to build a hosted VoIP server or host
 - English version of the book are available [book-contents](book-contents/en) folder.
 - Other related documents are available in [documents](documents) folder.
 
+# License
+
+This project is licensed as [MIT License](LICENSE.md)
+
 # Maintainers
 
 - [Anton Raharja](http://antonraharja.com)
