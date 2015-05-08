@@ -1,6 +1,7 @@
-Welcome to the VoIP ID wiki.
+VoIP ID Book Project
+====================
 
-Table of Contents
+# Table of Contents
 
 * [1. Installation](1-Installation/1-Installation.md)
 	* [1.1 VoIP ID Installation](1-Installation/1.1-VoIP-ID-Installation.md)
