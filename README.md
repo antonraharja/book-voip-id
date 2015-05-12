@@ -1,11 +1,13 @@
 VoIP ID Book Project
 ====================
 
-VoIP ID is a Free and Open Source Software to build a hosted VoIP server or hosted IPPBX service. Please visit [VoIP ID project](https://github.com/antonraharja/voip-id) for more information.
+VoIP ID is a Free and Open Source Software to build a hosted VoIP server or hosted IPPBX service.
+
+Visit [VoIP ID project](https://github.com/antonraharja/voip-id) for source codes and more information.
 
 # Table of Contents
 
-* English version of the book are available [book-contents](book-contents/en/README.md) folder.
+* English version is available in [book-contents](book-contents/en/README.md) folder.
 * Other related documents are available in [documents](documents/README.md) folder.
 
 # License
