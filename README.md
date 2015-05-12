@@ -10,7 +10,7 @@ VoIP ID is a Free and Open Source Software to build a hosted VoIP server or host
 
 # License
 
-This project is licensed as [MIT License](LICENSE.md)
+This project is licensed as [GNU Free Documentation License version 1.3](LICENSE.md)
 
 # Maintainers
 
