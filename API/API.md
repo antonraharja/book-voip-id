@@ -1,6 +1,5 @@
 This Document for VoIP ID API :
 
-
 *API Verbs* | *List Parameter* | *Function* | *Note*
 --- | --- | --- | --- 
  **User :**  |
