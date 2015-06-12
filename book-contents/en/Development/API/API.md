@@ -30,7 +30,10 @@ phonenumber/update | user | Update phone number
  | secret
  | desc
 phonenumber/list | dcp | Get list phone number
-|user
+ | user
+ **Domain :** |
+domain/list | | Get List Domain
+|
 **Online phone :** |
 onlinephone/list | | Get List Online Phone Number
 |
