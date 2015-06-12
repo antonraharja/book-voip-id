@@ -29,8 +29,8 @@ phonenumber/update | user | Update phone number
  | dss 
  | secret
  | desc
-phonenumber/list | user | Get list phone number
-|
+phonenumber/list | dcp | Get list phone number
+|user
 **Online phone :** |
 onlinephone/list | | Get List Online Phone Number
 |
