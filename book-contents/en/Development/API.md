@@ -26,14 +26,14 @@ user/list            |                      | Get list user        |
 *API Verbs*          | *List Parameter*     | *Function*           | *Note*
 -------------------- | -------------------- | -------------------- | --------------------
 phonenumber/create   | user                 | Create phone number  |
-                     | dss                  |                      |
+                     | dcp                  |                      |
                      | secret               |                      |
                      | desc                 |                      |
 phonenumber/remove   | user                 | Remove phone number  |
-                     | dss                  |                      |
+                     | dcp                  |                      |
                      | phonenumber          |                      |
 phonenumber/update   | user                 | Update phone number  |
-                     | dss                  |                      |
+                     | dcp                  |                      |
                      | secret               |                      |
                      | desc                 |                      |
 phonenumber/list     | dcp                  | Get list phone number|
