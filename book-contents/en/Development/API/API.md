@@ -1,23 +1,28 @@
-This Document for VoIP ID API :
+This Document for VoIP ID API
 
-*API Verbs* | *List Parameter* | *Function* | *Note*
---- | --- | --- | --- 
- **User :**  |
-user/create | accid | Create user
- | password 
- | email 
- | firstname
- | lastname 
-user/remove | accid | Remove user 
- | email 
-user/update | accid | Update user
- | password
- | email
- | firstname
- | lastname
-user/list : | | Get list user
-| | 
-**Phone Number :** |
+## User
+
+*API Verbs*         | *List Parameter*    | *Function*          | *Note*
+------------------- | ------------------- | ------------------- | -------------------
+user/create         | accid               | Create user         |
+                    | password            |                     |
+                    | email               |                     |
+                    | firstname           |                     |
+                    | lastname            |                     | 
+user/remove         | accid               | Remove user         |
+                    | email               |                     |
+user/update         | accid               | Update user         |
+                    | password            |                     |
+                    | email               |                     |
+                    | firstname           |                     |
+                    | lastname            |                     |
+user/list           |                     | Get list user       |
+
+
+## Phone Number
+
+*API Verbs* | *List Parameter* | *Function*    | *Note*
+----------- | ---------------- | ------------- | ------
 phonenumber/create | user | Create phone number
  | dss
  | secret
