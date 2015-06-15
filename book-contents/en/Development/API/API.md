@@ -52,6 +52,7 @@ onlinephone/list     |                     | Get List Online Phone |
 
 
 ## CDR
+
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
 -------------------- | ------------------- | --------------------- | --------------------
 cdr/list             |                     | Get CDR Data
