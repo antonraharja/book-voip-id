@@ -36,11 +36,22 @@ phonenumber/update | user | Update phone number
  | desc
 phonenumber/list | dcp | Get list phone number
  | user
- **Domain :** |
+
+## Domain
+
+*API Verbs* | *List Parameter* | *Function*    | *Note*
+----------- | ---------------- | ------------- | ------
 domain/list | | Get List Domain
 |
-**Online phone :** |
+
+## Online phone
+
+*API Verbs* | *List Parameter* | *Function*    | *Note*
+----------- | ---------------- | ------------- | ------
 onlinephone/list | | Get List Online Phone Number
 |
-**CDR :** |
+
+## CDR
+*API Verbs* | *List Parameter* | *Function*    | *Note*
+----------- | ---------------- | ------------- | ------
 cdr/list | | Get CDR Data
