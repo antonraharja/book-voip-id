@@ -1,4 +1,7 @@
-This Document for VoIP ID API
+API
+===
+
+# API
 
 ## User
 
@@ -17,7 +20,6 @@ user/update          | accid                | Update user          |
                      | firstname            |                      |
                      | lastname             |                      |
 user/list            |                      | Get list user        |
-
 
 ## Phone Number
 
@@ -44,12 +46,12 @@ phonenumber/list     | dcp                  | Get list phone number|
 domain/list          |                     | Get List Domain       |
 
 
-## Online phone
+Online phone
+------------
 
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
 -------------------- | ------------------- | --------------------- | --------------------
 onlinephone/list     |                     | Get List Online Phone |
-
 
 ## CDR
 
