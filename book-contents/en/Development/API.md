@@ -58,3 +58,11 @@ onlinephone/list     |                     | Get List Online Phone |
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
 -------------------- | ------------------- | --------------------- | --------------------
 cdr/list             |                     | Get CDR Data
+
+## Return Codes
+
+*Error Code*         | *Error String*      |
+-------------------- | ------------------- |
+403                  | Invalid token       |
+501                  | DCP not found       |
+502                  | User not found      |
