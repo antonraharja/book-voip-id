@@ -70,8 +70,8 @@ cdr/list             | user                | Get CDR Data          |
                      | dcp                 |                       |
                      | from                |                       | Source number
                      | to                  |                       | Destination number
-                     | startdate           |                       | Date format (dd:mm:YYYY)
-                     | enddate             |                       | Date format (dd:mm:YYYY)
+                     | startdate           |                       | Date format (dd-mm-YYYY)
+                     | enddate             |                       | Date format (dd-mm-YYYY)
                      | starttime           |                       | Time format (HH:ii:ss)
                      | endtime             |                       | Time format (HH:ii:ss)
                      | maxduration         |                       | Number in seconds
