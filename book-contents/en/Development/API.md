@@ -53,6 +53,15 @@ Online phone
 -------------------- | ------------------- | --------------------- | --------------------
 onlinephone/list     |                     | Get List Online Phone |
 
+
+gateway
+------------
+
+*API Verbs*          | *List Parameter*    | *Function*            | *Note*
+-------------------- | ------------------- | --------------------- | --------------------
+gateway/list         |                     | Get List Gateway      |
+
+
 ## CDR
 
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
