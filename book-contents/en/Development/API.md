@@ -66,7 +66,17 @@ gateway/list         |                     | Get List Gateway      |
 
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
 -------------------- | ------------------- | --------------------- | --------------------
-cdr/list             |                     | Get CDR Data
+cdr/list             | user                | Get CDR Data          |
+                     | dcp                 |                       |
+                     | from                |                       | Source number
+                     | to                  |                       | Destination number
+                     | startdate           |                       | Date format (dd:mm:YYYY)
+                     | enddate             |                       | Date format (dd:mm:YYYY)
+                     | starttime           |                       | Time format (HH:ii:ss)
+                     | endtime             |                       | Time format (HH:ii:ss)
+                     | maxduration         |                       | Number in seconds
+                     | minduration         |                       | Number in seconds
+
 
 ## Return Codes
 
