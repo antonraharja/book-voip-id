@@ -54,7 +54,7 @@ Online phone
 onlinephone/list     |                     | Get List Online Phone |
 
 
-gateway
+Gateway
 ------------
 
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
