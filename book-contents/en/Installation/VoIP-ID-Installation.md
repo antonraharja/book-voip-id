@@ -12,11 +12,17 @@ This document explains how to install VoIP ID software, the web User Interface p
 
 ### Step 1: Install Ubuntu server 14.04 or 15.04
 
-During installation you need to select these packages:
+During server installation you need to select these packages:
 
 - OpenSSH server
 - LAMP
 - Mail server
+
+Run below command when your server installed without LAMP stack:
+
+```
+apt-get install apache2 mysql-server mysql-client php5 php5-cli php5-mysql php5-gd
+```
 
 ### Step 2: Update Ubuntu server 14.04 or 15.04
 
