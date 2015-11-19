@@ -21,8 +21,8 @@ user/update          | accid                | Update user          |
 user/list            |                      | Get list user        |
 
 Example :
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&accid=user1&password=secret&email=user1@domain.com' https://teleponrakyat.id/api/user/create
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/user/list
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&accid=user1&password=secret&email=user1@domain.com' https://teleponrakyat.id/api/user/create
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/user/list
 
 ## Phone Number
 
@@ -43,8 +43,8 @@ phonenumber/list     | dcp                  | Get list phone number|
                      | user                 |                      |
 
 Example :
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&user=user1&dcp=dcp.domain.com&secret=password&desc=Phone1' https://teleponrakyat.id/api/phonenumber/create
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&user=user1&dcp=dcp.domain.com' https://teleponrakyat.id/api/phonenumber/list
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&user=user1&dcp=dcp.domain.com&secret=password&desc=Phone1' https://teleponrakyat.id/api/phonenumber/create
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&user=user1&dcp=dcp.domain.com' https://teleponrakyat.id/api/phonenumber/list
 
 ## Domain
 
@@ -53,7 +53,7 @@ curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&user=user1&dcp=dcp.domain.co
 domain/list          |                     | Get List Domain       |
 
 Example :
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/domain/list
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/domain/list
 
 ## Online phone
 
@@ -62,7 +62,7 @@ curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/ap
 onlinephone/list     |                     | Get List Online Phone |
 
 Example :
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/onlinephone/list
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/onlinephone/list
 
 ## Gateway
 
@@ -71,7 +71,7 @@ curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/ap
 gateway/list         |                     | Get List Gateway      |
 
 Example :
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/gateway/list
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/gateway/list
 
 ## CDR
 
@@ -89,7 +89,7 @@ cdr/list             | user                | Get CDR Data          |
                      | minduration         |                       | Number in seconds
 
 Example :
-curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&dcp=dcp.domain.com' https://teleponrakyat.id/api/cdr/list
+* curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&dcp=dcp.domain.com' https://teleponrakyat.id/api/cdr/list
 
 ## Return Codes
 
