@@ -8,10 +8,9 @@ API
 *API Verbs*          | *List Parameter*     | *Function*           | *Note*
 -------------------- | -------------------- | -------------------- | --------------------
 user/create          | accid                | Create user          |
-                     | password             |                      |
                      | email                |                      |
                      | firstname            |                      |
-                     | lastname             |                      | 
+                     | lastname             |                      |
 user/remove          | accid                | Remove user          |
                      | email                |                      |
 user/update          | accid                | Update user          |
@@ -20,6 +19,10 @@ user/update          | accid                | Update user          |
                      | firstname            |                      |
                      | lastname             |                      |
 user/list            |                      | Get list user        |
+
+Example :
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&accid=user1&password=secret&email=user1@domain.com' https://teleponrakyat.id/api/user/create
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/user/list
 
 ## Phone Number
 
@@ -39,11 +42,18 @@ phonenumber/update   | user                 | Update phone number  |
 phonenumber/list     | dcp                  | Get list phone number|
                      | user                 |                      |
 
+Example :
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&user=user1&dcp=dcp.domain.com&secret=password&desc=Phone1' https://teleponrakyat.id/api/phonenumber/create
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&user=user1&dcp=dcp.domain.com' https://teleponrakyat.id/api/phonenumber/list
+
 ## Domain
 
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
 -------------------- | ------------------- | --------------------- | --------------------
 domain/list          |                     | Get List Domain       |
+
+Example :
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/domain/list
 
 
 Online phone
@@ -53,6 +63,9 @@ Online phone
 -------------------- | ------------------- | --------------------- | --------------------
 onlinephone/list     |                     | Get List Online Phone |
 
+Example :
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/onlinephone/list
+
 
 Gateway
 ------------
@@ -61,11 +74,14 @@ Gateway
 -------------------- | ------------------- | --------------------- | --------------------
 gateway/list         |                     | Get List Gateway      |
 
+Example :
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7' https://teleponrakyat.id/api/gateway/list
+
 
 ## CDR
 
 *API Verbs*          | *List Parameter*    | *Function*            | *Note*
--------------------- | ------------------- | --------------------- | --------------------
+-------------------- | ------------------- | --------------------- | ------------------------
 cdr/list             | user                | Get CDR Data          |
                      | dcp                 |                       |
                      | from                |                       | Source number
@@ -77,6 +93,8 @@ cdr/list             | user                | Get CDR Data          |
                      | maxduration         |                       | Number in seconds
                      | minduration         |                       | Number in seconds
 
+Example :
+curl --data 'token=$2y$10$OqwI.82kdiqyrbx61lsjandz7&dcp=dcp.domain.com' https://teleponrakyat.id/api/cdr/list
 
 ## Return Codes
 
